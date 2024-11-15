@@ -5,37 +5,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CharacterClass {
-    String name;
-    String description;
+    String className;
+    String classDescription;
     int hitdie;
 
     public CharacterClass(String name, String description, int hitdie) {
-        this.name = name;
-        this.description = description;
+        this.className = name;
+        this.classDescription = description;
         this.hitdie = hitdie; //Compare int in attributes to generate the random number
 
     }
     @Override
     public String toString() {
-        return "Class: " + name + "\n" +
-                "Description: " + description + "\n" +
+        return "Class: " + className + "\n" +
+                "Description: " + classDescription + "\n" +
                 "Hit Die: " + hitdie + "\n";
     }
 
-    public static void main(String[] args) {
+    public static void creatingCharacterClasses() {
         String[] classNames = {"Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
                 "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"};
-        int[] hitDie = {12, 8, 8, 8, 10, 8, 10, 10, 8, 6, 8, 6};
-        String[] descriptions = descriptions();
+
+        int[] hitDie = {12, 8, 8, 8, 10, 8, 10, 10, 8, 6, 8, 6}; //Maybe something can be done here as well?
+        String[] descriptions = descriptionsForClasses();
         List<CharacterClass> characterClasses = new ArrayList<>();
-        for (int i = 0; i < classNames.length; i++) {
+        for
+        (int i = 0; i < classNames.length; i++) {
             characterClasses.add(new CharacterClass(classNames[i], descriptions[i], hitDie[i]));
         }
-        System.out.println(characterClasses.get(0));
-        System.out.println(characterClasses.get(10));
     }
 
-    private static String[] descriptions() {
+    private static String[] descriptionsForClasses() {
         return new String[]{
                 "Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage.",
                 "Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions.",
