@@ -2,6 +2,7 @@ package characters;
 //Here I make character classes user can select.
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class CharacterClass {
     String name;
@@ -14,25 +15,28 @@ public class CharacterClass {
         this.hitdie = hitdie; //Compare int in attributes to generate the random number
 
     }
+    @Override
+    public String toString() {
+        return "Class: " + name + "\n" +
+                "Description: " + description + "\n" +
+                "Hit Die: " + hitdie + "\n";
+    }
 
     public static void main(String[] args) {
-        String[] text = descriptions();
-        CharacterClass Barbarian = new CharacterClass("Barbarian", text[0], 12);
-        CharacterClass Bard = new CharacterClass("Bard", text[1], 8);
-        CharacterClass Cleric = new CharacterClass("Cleric", text[2], 8);
-        CharacterClass Druid = new CharacterClass("Druid", text[3], 8);
-        CharacterClass Fighter = new CharacterClass("Fighter", text[4], 10);
-        CharacterClass Monk = new CharacterClass("Monk", text[5], 8);
-        CharacterClass Paladin = new CharacterClass("Paladin", text[6], 10);
-        CharacterClass Ranger = new CharacterClass("Ranger", text[7], 10);
-        CharacterClass Rogue = new CharacterClass("Rogue", text[8], 8);
-        CharacterClass Sorcerer = new CharacterClass("Sorcerer", text[9], 6);
-        CharacterClass Warlock = new CharacterClass("Warlock", text[10], 8);
-        CharacterClass Wizard = new CharacterClass("Wizard", text[11], 6);
+        String[] classNames = {"Barbarian", "Bard", "Cleric", "Druid", "Fighter", "Monk",
+                "Paladin", "Ranger", "Rogue", "Sorcerer", "Warlock", "Wizard"};
+        int[] hitDie = {12, 8, 8, 8, 10, 8, 10, 10, 8, 6, 8, 6};
+        String[] descriptions = descriptions();
+        List<CharacterClass> characterClasses = new ArrayList<>();
+        for (int i = 0; i < classNames.length; i++) {
+            characterClasses.add(new CharacterClass(classNames[i], descriptions[i], hitDie[i]));
+        }
+        System.out.println(characterClasses.get(0));
+        System.out.println(characterClasses.get(10));
     }
 
     private static String[] descriptions() {
-        String[] descriptions = {
+        return new String[]{
                 "Barbarians are mighty warriors who are powered by primal forces of the multiverse that manifest as a Rage.",
                 "Bards are expert at inspiring others, soothing hurts, disheartening foes, and creating illusions.",
                 "Clerics draw power from the realms of the gods and harness it to work miracles.",
@@ -46,6 +50,5 @@ public class CharacterClass {
                 "Warlocks quest for knowledge that lies hidden in the fabric of the multiverse.",
                 "Wizards are defined by their exhaustive study of magic’s inner workings."
         };
-        return descriptions;
     }
 }
