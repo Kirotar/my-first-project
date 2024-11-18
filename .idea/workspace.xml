@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="771044b9-1b81-4f05-8aa0-70cc1c0d59d2" name="Changes" comment="Changed name, drafted a way to make Species based on the CharacterClass Class.">
+    <list default="true" id="771044b9-1b81-4f05-8aa0-70cc1c0d59d2" name="Changes" comment="Clarified names">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/characters/CharacterClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/CharacterClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/characters/CharacterSpecies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/characters/CharacterSpecies.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,21 +52,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CharacterClass.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "feature-character-creation",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.web.browsers",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CharacterClass.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature-character-creation&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,6 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1731655690270</updated>
       <workItem from="1731655691342" duration="965000" />
+      <workItem from="1731922196431" duration="1688000" />
     </task>
     <task id="LOCAL−00001" summary="Start of a new project.">
       <option name="closed" value="true" />
@@ -121,7 +121,14 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1731675053825</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Clarified names">
+      <option name="closed" value="true" />
+      <created>1731679013791</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1731679013791</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +140,7 @@
     <MESSAGE value="Created character descriptions array." />
     <MESSAGE value="Looked up solutions to simplify, added a loop to create objects instead, @Override to print object info." />
     <MESSAGE value="Changed name, drafted a way to make Species based on the CharacterClass Class." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed name, drafted a way to make Species based on the CharacterClass Class." />
+    <MESSAGE value="Clarified names" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clarified names" />
   </component>
 </project>
