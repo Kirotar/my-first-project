@@ -31,9 +31,9 @@ public class CharacterSpecies {
     public static void creatingSpecies() {
         String[] speciesNames = {"Human", "Elf", "Dwarf", "Halfling", "Gnome", "Half-elf", "Half-orc", "Tiefling", "Dragonborn"};
         String[] speciesDescriptions = descriptionsForSpecies();
-        String[] bonus = {"."};
-        String[] size = {"."};
-        int[] speed = {30};
+        String[] bonus = {"ALL, DEX, CON, INT, CHA, STR, CHA, STR"};
+        String[] size = {"medium, medium, small, small, small, medium, medium, medium, medium"};
+        int[] speed = {30, 30, 25, 25, 25, 30, 30, 30, 30};
 
         List<characters.CharacterSpecies> characterSpecies = new ArrayList<>();
         for (int i = 0; i < speciesNames.length; i++) {
